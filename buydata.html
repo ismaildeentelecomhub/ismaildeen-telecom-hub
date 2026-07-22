@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy Data - ISMAIL DEEN TELECOM HUB</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">ISMAIL DEEN TELECOM HUB</div>
+
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="wallet.html">Wallet</a>
+<a href="profile.html">Profile</a>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Buy Data</h2>
+
+<label>Network</label>
+<select id="network" onchange="loadPlans()">
+<option value="">Select Network</option>
+<option value="mtn-data">MTN</option>
+<option value="airtel-data">Airtel</option>
+<option value="glo-data">Glo</option>
+<option value="etisalat-data">9mobile</option>
+</select>
+
+<label>Data Plan</label>
+<select id="variation_code">
+<option value="">Select Plan</option>
+<option value="mtn-500mb-30days">500MB</option>
+<option value="mtn-1gb-30days">1GB</option>
+<option value="mtn-2gb-30days">2GB</option>
+</select>
+
+<label>Phone Number</label>
+<input type="tel" id="phone" placeholder="08012345678">
+
+<label>Amount</label>
+<input type="number" id="amount" placeholder="Amount">
+
+<button onclick="buyData()">Buy Data</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="js/buydata.js"></script>
+<script src="js/loadPlans.js"></script>
+</body>
+</html>
