@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile - ISMAIL DEEN TELECOM HUB</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">IDTH</div>
+
+<nav>
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="wallet.html">Wallet</a></li>
+<li><a href="#" onclick="logout()">Logout</a></li>
+</ul>
+</nav>
+
+</header>
+
+<div class="form-container">
+
+<h2>👤 My Profile</h2>
+
+<div class="profile-card">
+
+<p><strong>Full Name:</strong></p>
+<p id="fullname">Loading...</p>
+
+<hr>
+
+<p><strong>Email:</strong></p>
+<p id="email">Loading...</p>
+
+<hr>
+
+<p><strong>Phone Number:</strong></p>
+<p id="phone">Loading...</p>
+
+<hr>
+
+<p><strong>Wallet Balance:</strong></p>
+<h2 id="wallet">₦0.00</h2>
+
+</div>
+
+<br>
+
+<button onclick="window.location.href='dashboard.html'">
+Back to Dashboard
+</button>
+
+</div>
+
+<script type="module" src="js/profile.js"></script>
+<script type="module" src="js/auth.js"></script>
+
+</body>
+</html>
